@@ -7,3 +7,4 @@
 
 #include <collection.h>
 #include "App.xaml.h"
+#include "Biz.h"

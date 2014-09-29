@@ -24,6 +24,9 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+	// Fill the ListView
+	auto biz = ref new Biz();
+	list->ItemsSource = biz->GetPeople();
 }
 
 /// <summary>

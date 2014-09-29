@@ -62,6 +62,16 @@
         return ref new XamlSystemBaseType(typeName);
     }
 
+    if (typeName == L"Object")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
+    if (typeName == L"String")
+    {
+        return ref new XamlSystemBaseType(typeName);
+    }
+
     if (typeName == L"MyFirstApp.MainPage")
     {
         ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Windows.UI.Xaml.Controls.Page"));
@@ -74,13 +84,57 @@
         return userType;
     }
 
+    if (typeName == L"MyFirstApp.Person")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Object"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MyFirstApp::Person(); 
+            };
+        userType->AddMemberName(L"FullName");
+        userType->SetIsBindable();
+        return userType;
+    }
+
+    if (typeName == L"MyFirstApp.Biz")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlUserType^ userType = ref new ::XamlTypeInfo::InfoProvider::XamlUserType(this, typeName, GetXamlTypeByName(L"Object"));
+        userType->KindOfType = ::Windows::UI::Xaml::Interop::TypeKind::Custom;
+        userType->Activator =
+            []() -> Platform::Object^ 
+            {
+                return ref new ::MyFirstApp::Biz(); 
+            };
+        userType->SetIsBindable();
+        return userType;
+    }
+
     return nullptr;
 }
 
 ::Windows::UI::Xaml::Markup::IXamlMember^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::CreateXamlMember(::Platform::String^ longMemberName)
 {
-    // No Local Properties
-    (void)longMemberName; // Unused parameter
+    if (longMemberName == L"MyFirstApp.Person.FullName")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"FullName", L"String");
+        xamlMember->Getter =
+            [](Object^ instance) -> Object^
+            {
+                auto that = (::MyFirstApp::Person^)instance;
+                return that->FullName;
+            };
+
+        xamlMember->Setter =
+            [](Object^ instance, Object^ value) -> void
+            {
+                auto that = (::MyFirstApp::Person^)instance;
+                that->FullName = (::Platform::String^)value;
+            };
+        return xamlMember;
+    }
+
     return nullptr;
 }
 

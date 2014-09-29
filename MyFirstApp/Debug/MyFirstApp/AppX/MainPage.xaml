@@ -8,7 +8,23 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <!-- page title -->
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="My First Windows 8 App"
+                   Style="{StaticResource PageHeaderTextStyle}"/>
+        </Grid>
+        
+        <ListView x:Name="list" DisplayMemberPath="FullName" 
+                  Grid.Row="1" Grid.Column="0" Margin="116,0,0,46"/>
     </Grid>
 </Page>
 
