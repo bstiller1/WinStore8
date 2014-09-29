@@ -154,12 +154,21 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="MyFirstApp_TemporaryKey.pfx" />
+    <None Include="Photos\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\Logo.png" />
     <Image Include="Assets\SmallLogo.png" />
     <Image Include="Assets\StoreLogo.png" />
     <Image Include="Assets\SplashScreen.png" />
+    <Image Include="Photos\01.jpg" />
+    <Image Include="Photos\02.jpg" />
+    <Image Include="Photos\03.jpg" />
+    <Image Include="Photos\04.jpg" />
+    <Image Include="Photos\05.jpg" />
+    <Image Include="Photos\06.jpg" />
+    <Image Include="Photos\07.jpg" />
+    <Image Include="Photos\08.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.xaml.cpp">

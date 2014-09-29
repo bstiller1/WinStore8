@@ -22,9 +22,21 @@
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="My First Windows 8 App"
                    Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
-        
-        <ListView x:Name="list" DisplayMemberPath="FullName" 
-                  Grid.Row="1" Grid.Column="0" Margin="116,0,0,46"/>
+
+        <GridView Grid.Row="1" Grid.Column="0" x:Name="list" Margin="116,0,0,46">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Image Source="{Binding Photo}" Width="200" Height="130" Stretch="UniformToFill" />
+                        <Border Background="#A5000000" Height="45" VerticalAlignment="Bottom">
+                            <StackPanel Margin="10, -2, -2, -2">
+                                <TextBlock Text="{Binding FullName}" Margin="0,20,0,0" Foreground="#7CFFFFFF" HorizontalAlignment="Left" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>
 

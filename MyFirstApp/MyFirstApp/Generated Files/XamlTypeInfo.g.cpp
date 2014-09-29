@@ -93,6 +93,7 @@
             {
                 return ref new ::MyFirstApp::Person(); 
             };
+        userType->AddMemberName(L"Photo");
         userType->AddMemberName(L"FullName");
         userType->SetIsBindable();
         return userType;
@@ -116,6 +117,25 @@
 
 ::Windows::UI::Xaml::Markup::IXamlMember^ ::XamlTypeInfo::InfoProvider::XamlTypeInfoProvider::CreateXamlMember(::Platform::String^ longMemberName)
 {
+    if (longMemberName == L"MyFirstApp.Person.Photo")
+    {
+        ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"Photo", L"String");
+        xamlMember->Getter =
+            [](Object^ instance) -> Object^
+            {
+                auto that = (::MyFirstApp::Person^)instance;
+                return that->Photo;
+            };
+
+        xamlMember->Setter =
+            [](Object^ instance, Object^ value) -> void
+            {
+                auto that = (::MyFirstApp::Person^)instance;
+                that->Photo = (::Platform::String^)value;
+            };
+        return xamlMember;
+    }
+
     if (longMemberName == L"MyFirstApp.Person.FullName")
     {
         ::XamlTypeInfo::InfoProvider::XamlMember^ xamlMember = ref new ::XamlTypeInfo::InfoProvider::XamlMember(this, L"FullName", L"String");

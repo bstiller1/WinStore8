@@ -22,6 +22,9 @@
     <Image Include="Assets\SplashScreen.png">
       <Filter>Assets</Filter>
     </Image>
+    <Filter Include="Photos">
+      <UniqueIdentifier>{945c7506-c38e-4d4f-8483-f409ec32a6d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -42,8 +45,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="MyFirstApp_TemporaryKey.pfx" />
+    <None Include="Photos\Thumbs.db">
+      <Filter>Photos</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Photos\01.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\02.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\03.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\04.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\05.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\06.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\07.jpg">
+      <Filter>Photos</Filter>
+    </Image>
+    <Image Include="Photos\08.jpg">
+      <Filter>Photos</Filter>
+    </Image>
   </ItemGroup>
 </Project>

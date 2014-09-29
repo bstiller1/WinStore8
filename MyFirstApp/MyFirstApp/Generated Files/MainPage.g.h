@@ -12,7 +12,7 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
-                ref class ListView;
+                ref class GridView;
                 ref class TextBlock;
             }
         }
@@ -31,7 +31,7 @@ namespace MyFirstApp
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Controls::ListView^ list;
+        private: ::Windows::UI::Xaml::Controls::GridView^ list;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ pageTitle;
     };
 }

@@ -38,6 +38,30 @@
       <PackagePath>Assets\SplashScreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\01.jpg">
+      <PackagePath>Photos\01.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\02.jpg">
+      <PackagePath>Photos\02.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\03.jpg">
+      <PackagePath>Photos\03.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\04.jpg">
+      <PackagePath>Photos\04.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\05.jpg">
+      <PackagePath>Photos\05.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\06.jpg">
+      <PackagePath>Photos\06.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\07.jpg">
+      <PackagePath>Photos\07.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Photos\08.jpg">
+      <PackagePath>Photos\08.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\App.xaml">
       <PackagePath>App.xaml</PackagePath>
     </AppxPackagedFile>
