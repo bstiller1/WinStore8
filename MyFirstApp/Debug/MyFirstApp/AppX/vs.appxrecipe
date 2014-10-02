@@ -16,21 +16,25 @@
     <AppXManifest Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-29T20:37:26.178</Modified>
+      <Modified>2014-10-02T17:16:56.244</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MyFirstApp.exe">
       <PackagePath>MyFirstApp.exe</PackagePath>
-      <Modified>2014-09-29T20:51:19.711</Modified>
+      <Modified>2014-10-02T18:22:15.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MyFirstApp.pdb">
       <PackagePath>MyFirstApp.pdb</PackagePath>
-      <Modified>2014-09-29T20:51:19.914</Modified>
+      <Modified>2014-10-02T18:22:15.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MyFirstApp.winmd">
       <PackagePath>MyFirstApp.winmd</PackagePath>
-      <Modified>2014-09-29T20:51:18.053</Modified>
+      <Modified>2014-10-02T18:22:11.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2012-04-23T06:24:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
@@ -94,11 +98,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
-      <Modified>2014-09-29T20:51:15.120</Modified>
+      <Modified>2014-09-29T21:11:31.724</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\SearchPeople.xaml">
+      <PackagePath>SearchPeople.xaml</PackagePath>
+      <Modified>2014-10-02T17:49:00.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-29T20:37:26.050</Modified>
+      <Modified>2014-10-02T17:16:56.099</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

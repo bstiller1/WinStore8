@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include "SearchPeople.xaml.h"
 
 using namespace MyFirstApp;
 
@@ -104,4 +105,65 @@ void App::OnSuspending(Object^ sender, SuspendingEventArgs^ e)
 	(void) e;	// Unused parameter
 
 	//TODO: Save application state and stop any background activity
+}
+
+/// <summary>
+/// Invoked when the application is activated to display search results.
+/// </summary>
+/// <param name="args">Details about the activation request.</param>
+void MyFirstApp::App::OnSearchActivated(Windows::ApplicationModel::Activation::SearchActivatedEventArgs^ args)
+{
+
+	// TODO: Register the Windows::ApplicationModel::Search::SearchPane::GetForCurrentView()->QuerySubmitted
+	// event in OnWindowCreated to speed up searches once the application is already running
+
+	// If the app does not contain a top-level frame, it is possible that this 
+	// is the initial launch of the app. Typically this method and OnLaunched 
+	// in App.xaml.cpp can call a common method.
+	auto previousContent = Window::Current->Content;
+	auto rootFrame = dynamic_cast<Windows::UI::Xaml::Controls::Frame^>(previousContent);
+	if (rootFrame == nullptr)
+	{
+		// Create a Frame to act as the navigation context and associate it with
+		// a SuspensionManager key
+		rootFrame = ref new Frame();
+		Common::SuspensionManager::RegisterFrame(rootFrame, "AppFrame");
+
+		auto prerequisite = Concurrency::task<void>([](){});
+		if (args->PreviousExecutionState == ApplicationExecutionState::Terminated)
+		{
+			// Restore the saved session state only when appropriate, scheduling the
+			// final launch steps after the restore is complete
+			prerequisite = Common::SuspensionManager::RestoreAsync();
+		}
+		prerequisite.then([=](Concurrency::task<void> prerequisite)
+		{
+			try
+			{
+				prerequisite.get();
+			}
+			catch (Platform::Exception^)
+			{
+				// If restore fails, the app should proceed as though there was no restored state.
+			}
+
+			// TODO: Navigate to the initial landing page of the app as if you were launched. This
+			// allows the user to return to your app from the search results page by using the back button.
+
+			//Navigate to the search page
+			rootFrame->Navigate(TypeName(SearchPeople::typeid), args->QueryText);
+			// Place the frame in the current Window
+			Window::Current->Content = rootFrame;
+			// Ensure the current window is active
+			Window::Current->Activate();
+
+		}, Concurrency::task_continuation_context::use_current());
+	}
+	else
+	{
+		//Navigate to the search page
+		rootFrame->Navigate(TypeName(SearchPeople::typeid), args->QueryText);
+		// Ensure the current window is active
+		Window::Current->Activate();
+	}
 }

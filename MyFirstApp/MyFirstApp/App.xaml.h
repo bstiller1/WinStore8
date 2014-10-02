@@ -20,5 +20,8 @@ namespace MyFirstApp
 
 	private:
 		void OnSuspending(Platform::Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ e);
+	protected:
+
+		virtual void OnSearchActivated(Windows::ApplicationModel::Activation::SearchActivatedEventArgs^ pArgs) override;
 	};
 }

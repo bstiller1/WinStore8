@@ -41,6 +41,21 @@ namespace MyFirstApp
 			vec->Append( ref new Person("Jessica Faustinelli", "Photos/07.jpg") );
 			vec->Append( ref new Person("Katia Egiziano", "Photos/08.jpg") );
 			return vec;
-		};
+		}; 
+		IVector<Person ^>^ GetPeople(Platform::String^ search)
+		{
+			Vector<Person^>^ vec = ref new Vector<Person^>();
+			std::wstring _search = std::wstring( search->Data() );
+			for each(Person^ p in GetPeople()){
+				std::wstring name = std::wstring( p->FullName->Data());
+				int pos = name.find(_search);
+				if (pos> 0){
+					vec->Append( p );
+				} 
+			}
+			return vec;
+		}; 
 	};
 }
+
+	

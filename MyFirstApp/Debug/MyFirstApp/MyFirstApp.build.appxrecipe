@@ -22,6 +22,9 @@
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MyFirstApp.winmd">
       <PackagePath>MyFirstApp.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\MyFirstApp\Assets\Logo.png">
       <PackagePath>Assets\Logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -70,6 +73,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\MainPage.xaml">
       <PackagePath>MainPage.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\SearchPeople.xaml">
+      <PackagePath>SearchPeople.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\MyFirstApp\Debug\MyFirstApp\resources.pri">
       <PackagePath>resources.pri</PackagePath>
