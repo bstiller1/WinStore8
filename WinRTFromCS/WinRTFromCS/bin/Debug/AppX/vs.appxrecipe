@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>STUDENT</Machine>
+    <WindowsUser>triosStudent</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>DBD470DCCA25115D884906EA46894685ADA0F9B1E26B2B027ADD8ED89D0310CC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>9fcfb0d8-024d-4bb7-af25-693dd7076807_1.0.0.0_neutral__1r3gmhwmtakrt</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>9fcfb0d8-024d-4bb7-af25-693dd7076807_1r3gmhwmtakrt!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>9fcfb0d8-024d-4bb7-af25-693dd7076807</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=triosStudent</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-10-08T18:11:09.765</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\WinRTFromCS.exe">
+      <PackagePath>WinRTFromCS.exe</PackagePath>
+      <Modified>2014-10-08T18:11:09.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\WinRTFromCS.pdb">
+      <PackagePath>WinRTFromCS.pdb</PackagePath>
+      <Modified>2014-10-08T18:11:08.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T04:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T04:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T04:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T04:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2014-10-08T17:55:04.658</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-27T00:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2014-10-08T18:09:22.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-10-08T18:11:09.151</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

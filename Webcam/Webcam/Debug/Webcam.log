@@ -1,0 +1,19 @@
+﻿Build started 10/8/2014 4:50:12 PM.
+     1>Project "C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\Webcam\Webcam\Webcam.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\Webcam\Webcam\\" /I"Generated Files\\" /IDebug\ /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\Webcam.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /wd4453 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.VCLibs\11.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj MainPage.xaml.cpp
+         MainPage.xaml.cpp
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(24): error C2871: 'Concurrency' : a namespace with this name does not exist
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(54): error C2653: 'concurrency' : is not a class or namespace name
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(55): error C2228: left of '.then' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(60): error C2653: 'concurrency' : is not a class or namespace name
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(61): error C2228: left of '.then' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(60): error C3861: 'create_task': identifier not found
+     1>c:\users\triosstudent\documents\visual studio 2012\projects\winstorec++\winstore-c-plus-plus\webcam\webcam\mainpage.xaml.cpp(54): error C3861: 'create_task': identifier not found
+     1>Done Building Project "C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\Webcam\Webcam\Webcam.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.43

@@ -1,0 +1,1 @@
+C:\Users\triosStudent\Documents\Visual Studio 2012\Projects\WinStoreC++\WinStore-C-plus-plus\WinRTFromCS\WinRTFromCS\WinRTFromCS.csproj;neutral
